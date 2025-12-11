@@ -18,3 +18,9 @@ pub fn read_filelines_to_vec(path: &str) -> Vec<String> {
     }
     ret
 }
+
+
+pub fn read_filelines_to_vec_of_char(path: &str) -> Vec<Vec<char>> {
+    let lines = read_filelines_to_vec(path);
+    lines.iter().map(|s| s.chars().collect()).collect()
+}
