@@ -9,11 +9,12 @@ mod d5;
 mod d6;
 mod d7;
 mod d8;
+mod d9;
 
 fn main() {
     println!("Hello, world!");
 
 
-    let solution = d8::solve_p1();
+    let solution = d9::solve_p2();
     println!("Solution: {}", solution);
 }
